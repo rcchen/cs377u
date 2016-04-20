@@ -1,0 +1,13 @@
+machine:
+  python:
+    version: 2.7.10
+
+test:
+  override:
+    - echo "Override tests"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - echo "Deploy to production"
